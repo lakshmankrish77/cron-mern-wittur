@@ -146,7 +146,7 @@ const fetchPOs = async () => {
 
     const options = {
         from: "witturtest596@gmail.com", // sender address
-        to: "brainhuttechnologies@gmail.com", // receiver email
+        to: "testwittur@gmail.com", // receiver email
         // subject: "Send email in Node.JS with Nodemailer using Gmail account001", // Subject line
         subject:header,
         text: message,
