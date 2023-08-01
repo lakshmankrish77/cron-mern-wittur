@@ -56,7 +56,7 @@ const getItemsWithoutPO = async () => {
           console.log('sending mail to Sender For Low Lead Time for these line Items... ');
           const lead_time_item_alert_creation_header = "Low Stock for Item: " + item.item_code ;
           const lead_time_item_alert_creation_message = "Hi there, Alert for Low Stock for Item::" + item.item_code ;
-          sendMail(lead_time_item_alert_creation_message, lead_time_item_alert_creation_header);  
+          // sendMail(lead_time_item_alert_creation_message, lead_time_item_alert_creation_header);  
           itemLeadTimeAlert (item);  
           getLineItemsAndCreateAlertEntry(item);
 
@@ -96,7 +96,7 @@ const fetchPOs = async () => {
           console.log('sending mail to Sender... ');
           const po_creation_header = "New PO Created : " + po.po_number ;
           const po_creation_message = "Hi there, New PO created. PO Number::" + po.po_number +  "and PO Date::" + poDate ;
-          sendMail(po_creation_message, po_creation_header);  
+          // sendMail(po_creation_message, po_creation_header);  
           poCreationAlertFlagUpdate (po);  
           getLineItemsAndCreateAlertEntryForThisPO(po);
 
